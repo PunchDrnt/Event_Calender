@@ -25,9 +25,9 @@
         "printWidth": 80,
         "tabWidth": 2,
         "singleQuote": true,
-        "trailingComma": "all",
         "semi": false,
-        "useTabs": false
+        "useTabs": false,
+        "endOfLine": "auto"
       }
     ],
     "eqeqeq": ["error", "always"],

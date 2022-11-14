@@ -1,0 +1,23 @@
+.month_container {
+  width: 100%;
+  height: 100%;
+}
+.month_header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+  height: 5%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.month_wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+  height: 95%;
+  grid-template-rows: repeat(6, 1fr);
+}

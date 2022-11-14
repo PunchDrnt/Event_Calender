@@ -1,16 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
 a {
+  display: flex;
   color: inherit;
   text-decoration: none;
+  font-size: 1.5rem;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: -50px;
+  padding-top: 50px;
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td{
+  width: 10%;
+  vertical-align: top;
+  border-bottom: 1px solid #eaeaea;
 }

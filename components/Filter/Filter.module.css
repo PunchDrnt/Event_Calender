@@ -1,0 +1,81 @@
+.filter_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0 1.5rem;
+}
+
+.filter_btngroup,
+.filterbtn,
+.altleftbtn,
+.filter_status,
+.status_active,
+.status_inactive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter_status {
+  gap: 1rem;
+  height: 100%;
+}
+
+.status_active {
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status_active.active {
+  position: relative;
+  height: 100%;
+  color: #1a73e8;
+}
+
+.status_active.active::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #1a73e8;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.filterbtn,
+.altleftbtn {
+  font-size: 1.2rem;
+  padding: 3px 10px;
+  background: #fff;
+  color: #292b2c;
+  border: 1px solid #eaeaea;
+  cursor: pointer;
+}
+
+.filterbtn {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.altleftbtn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.filterbtn:hover,
+.altleftbtn:hover {
+  border-color: #1a73e8;
+  color: #1a73e8;
+}
+
+@media screen and (max-width: 1200px) {
+  .filterbtn,
+  .altleftbtn {
+    display: none;
+  }
+}

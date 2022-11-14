@@ -1,0 +1,164 @@
+.nav_container {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  box-shadow: -10px -10px 10px 10px rgba(0, 0, 0, 0.3);
+  padding: 0 2rem;
+  background: #fff;
+  z-index: 10;
+}
+
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bar_icon {
+  display: none;
+}
+
+.nav_logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav_logo span:nth-child(1) {
+  color: greenyellow;
+}
+
+.nav_logo span:nth-child(2) {
+  color: purple;
+}
+
+.nav_logo span:nth-child(3) {
+  color: orange;
+}
+
+.nav_logo span:nth-child(4) {
+  color: pink;
+}
+
+.nav_logo span:nth-child(5) {
+  color: red;
+}
+
+.search_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #f6f7f9;
+}
+
+.search_icon {
+  display: flex;
+  align-items: center;
+  color: #292b2c;
+}
+
+.search {
+  background: inherit;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+
+.bell_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.bell_icon::after {
+  content: '';
+  position: absolute;
+  font-size: 1.2rem;
+  top: -3px;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  background: red;
+  border-radius: 50%;
+}
+
+.profile_image {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  background: purple;
+  border-radius: 7px;
+}
+
+.profile_image::after {
+  content: 'KK';
+  color: #fff;
+  font-size: 0.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav_profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile_name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.profile_position {
+  color: #818283;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+.arrow_icon {
+  color: #434547;
+  font-size: 0.8rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1320px) {
+  .nav_container {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .search_bar,
+  .nav_profile,
+  .arrow_icon {
+    display: none;
+  }
+
+  .bar_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+}
